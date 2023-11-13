@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230618/pngtree-blue-background-3d-space-rocket-emitting-smoke-featuring-blank-space-for-image_3637930.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 0 8%;
+}
+.yr{
+    color: yellow;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: 200;    
+}
+.header{  
+    top: 50%;
+    color: #fff;
+    position: absolute;
+    transform: translateY(-50%);
+    font-family: 'Poppins', sans-serif;   
+}
+.header h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.header h1 span{
+    color: green;
+}
+.TotalTime{
+    display: flex;
+    color: blue;    
+}
+.TotalTime div{
+    flex-basis: 100px;
+}
+.TotalTime p{
+    font-size: 60px;  
+}
+.rocket{   
+    position: absolute;
+    right: 1%;
+    bottom: 0;
+    animation: bubble 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+.bubble{
+    width: 220px;
+    position: absolute;
+    bottom: 0;
+    animation: bubble 4s linear infinite;
+}
+@keyframes bubble{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
